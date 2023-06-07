@@ -1,0 +1,42 @@
+@media screen and (max-width: 992px) {
+  /* navbar */
+  .a-avatar {
+    /* display: none; */
+    flex-basis: 60px;
+  }
+
+  .avatar {
+    display: none;
+  }
+  /* Chứng chỉ - giải thưởng */
+  .chungchi-img {
+    width: 340px;
+  }
+
+  /* Dự án */
+  .da-h {
+    height: 630px;
+  }
+
+  tr {
+    border: none;
+    border-top: 1px solid #dee2e6;
+  }
+
+  .da-name {
+    height: 100px;
+  }
+  .cv2,
+  .cv2-2 {
+    display: inline;
+  }
+
+  .icon-cv {
+    display: inline-block;
+    width: 10%;
+    color: white;
+    padding-left: 25px;
+    padding-top: 15px;
+    background-color: blueviolet;
+  }
+}

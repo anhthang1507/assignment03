@@ -1,0 +1,38 @@
+@media screen and (max-width: 768px) {
+  /* navbar */
+  .navbar {
+    flex-direction: column;
+    align-items: start;
+  }
+
+  .a-avatar {
+    display: none;
+  }
+
+  .nav {
+    border: none;
+  }
+
+  .nav:first-child {
+    border: none;
+  }
+
+  /* chứng chỉ - giải thưởng */
+  .chungchi {
+    border: none;
+    border-bottom: 2px solid orange;
+    margin: 20px 0;
+  }
+
+  .chungchi-img {
+    width: 100%;
+  }
+  .icon-cv {
+    display: inline-block;
+    width: 10%;
+    color: white;
+    padding-left: 15px;
+    padding-top: 15px;
+    background-color: blueviolet;
+  }
+}
