@@ -10,10 +10,11 @@
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="./css/font.css" />
+
     <link rel="stylesheet" href="./css/laptop.css" />
     <link rel="stylesheet" href="./css/tablet.css" />
     <link rel="stylesheet" href="./css/mobile.css" />
+    <link rel="stylesheet" href="./css/font.css" />
 
     <title>Assignment 03</title>
   </head>
@@ -27,7 +28,7 @@
     </div>
     <!--phan navbar-->
     <section id="nav-bar">
-      <nav class="navbar p-0">
+      <nav class="navbar">
         <a class="nav h6" href="#"> <i class="icon icon-user"></i>Thông tin</a>
         <a class="nav h6" href="#">
           <i class="icon icon-doc-text-inv"></i>Lý lịch</a
@@ -45,8 +46,8 @@
     <section id="about" class="bg-grey container-fluid">
       <!-- chia 2 cot -->
       <div class="row">
-        <div class="muctieu col-md">
-          <h1 class="mb-5 text-dark">Mục tiêu nghề nghiệp</h1>
+        <div class="muctieu col-md-6 p-5">
+          <h2 class="mb-5 text-dark">Mục tiêu nghề nghiệp</h2>
           <p>
             Là một sinh viên đã hoàn thành chương trình chứng chỉ Doanh Nghiệp
             của FUNiX. Em mong muốn mình sẽ được làm việc với vị trí
@@ -55,27 +56,25 @@
             hoàn thành tốt nhất công việc được giao.
           </p>
         </div>
-        <div class="thongtin col-md" id="personal-info">
-          <h1 class="mb-5 text-dark">Thông tin cá nhân</h1>
+        <div class="thongtin col-md-6 p-5" id="personal-info">
+          <h2 class="mb-5 text-dark">Thông tin cá nhân</h2>
           <div id="container-btn">
-            <p class="mb-2 text-dark">Thông tin cá nhân</p>
+            <p class="mt-2 text-dark">Hãy nhập email để xác thực</p>
             <form name="form1" id="form1" method="post">
               <input
                 type="text"
                 placeholder="Enter your email"
                 name="email"
                 id="email"
-                size="40"
-              />
+              /><br />
               <input
                 type="button"
-                class="btn btn-primary"
+                class="btn btn-primary mt-2"
                 name="check"
                 value="Check"
                 onclick="checkEmail();"
               />
             </form>
-            <p class="mt-2 text-dark">Hãy nhập email để xác thực</p>
           </div>
 
           <div id="container-infor">
@@ -111,12 +110,11 @@
       </div>
     </section>
     <!--phan kinh nghiem hoc van-->
-    <section id="job-info" class="job-info py-5">
-      <div class="container">
-        <!-- chia cot cho tung man hinh-->
-        <div class="row row-cols-md-2 row-cols-lg-3 g-4">
+    <section id="job-info" class="job-info">
+      <div class="container my-5">
+        <div class="row g-4">
           <!-- box kinh ngiệm -->
-          <div class="kinhnghiem">
+          <div class="kinhnghiem col-md-6 col-lg-4">
             <div class="box card">
               <div class="card-body">
                 <!-- chia 2 cot -->
@@ -160,7 +158,7 @@
             </div>
           </div>
           <!-- box học vấn -->
-          <div class="hocvan">
+          <div class="hocvan col-md-6 col-lg-4">
             <div class="box card">
               <div class="card-body">
                 <div class="row align-items-center py-3">
@@ -198,7 +196,7 @@
           </div>
 
           <!-- box hoạt động -->
-          <div class="hoatdong">
+          <div class="hoatdong col-md-6 col-lg-4">
             <div class="box card">
               <div class="card-body">
                 <div class="row align-items-center py-3">
@@ -235,7 +233,7 @@
           </div>
 
           <!-- box sở thích -->
-          <div class="sothich">
+          <div class="sothich col-md-6 col-lg-4">
             <div class="box card">
               <div class="card-body">
                 <div class="row align-items-center py-3">
@@ -267,7 +265,7 @@
           </div>
 
           <!-- box ngôn ngữ -->
-          <div class="ngonngu">
+          <div class="ngonngu col-md-6 col-lg-4">
             <div class="box card">
               <div class="card-body">
                 <div class="row align-items-center py-3">
@@ -299,7 +297,7 @@
           </div>
 
           <!-- box kỹ năng -->
-          <div class="kynang">
+          <div class="kynang col-md-6 col-lg-4">
             <div class="box card">
               <div class="card-body">
                 <div class="row align-items-center py-3">
@@ -351,7 +349,7 @@
         <h1 class="section-title text-dark mb-5">Chứng chỉ - Giải thưởng</h1>
         <!-- man hinh laptop 2 cot mobile 1 cot -->
         <div class="row">
-          <div class="chungchi col-md-6">
+          <div class="chungchi col-md-6 ps-2">
             <img
               class="chungchi-img"
               src="./images/Cert_DBI.png"
@@ -372,7 +370,7 @@
               alt="CHỨNG CHỈ LẬP TRÌNH JAVASCRIP - FUNIX"
             />
             <div class="d-ms-3">
-              <p class="text-dark fw-bold py-3">
+              <p class="text-dark fw-bold py-2">
                 CHỨNG CHỈ LẬP TRÌNH JAVASCRIP
               </p>
               <p>-Chứng chỉ thuộc chương trình CCDN</p>
@@ -399,7 +397,7 @@
 
     <!--du an-->
     <section id="du-an">
-      <div class="container duan p-5">
+      <div class="container duan mb-5">
         <h1 class="section-title text-dark mb-5">Dự án</h1>
         <div class="row">
           <div class="col-md-4 mb-3">
@@ -412,16 +410,19 @@
                 />
                 <div class="card-body">
                   <div class="da-name text-dark">CV CÁ NHÂN</div>
-                  <div class="cv2">
-                    <p class="nen-xanh">2021</p>
-                    <div class="cv2-2">
-                      <div class="cv2-1">
-                        <i class="icon-user-1"></i>
-                        <p>FUNIX</p>
-                      </div>
-                      <div class="cv2-1">
-                        <i class="icon-lamp"></i>
-                        <p>Developer</p>
+                  <div class="row p-3">
+                    <div class="col-12 col-md-4 col-lg-3">
+                      <span class="nen-xanh">2021</span>
+                    </div>
+
+                    <div class="col-12 col-md-8 d-lg-flex">
+                      <div class="d-md-block ps-3">
+                        <div class="d-flex pb-2">
+                          <i class="icon-user-1"></i><span>FUNiX</span>
+                        </div>
+                        <div class="d-flex">
+                          <i class="icon-lamp"></i><span>Developer</span>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -457,16 +458,19 @@
                   <div class="da-name text-dark">
                     TRANG WEB QUẢN LÝ THÚ CƯNG
                   </div>
-                  <div class="cv2">
-                    <p class="nen-xanh">2021</p>
-                    <div class="cv2-2">
-                      <div class="cv2-1">
-                        <i class="icon-user-1"></i>
-                        <p>FUNIX</p>
-                      </div>
-                      <div class="cv2-1">
-                        <i class="icon-lamp"></i>
-                        <p>Developer</p>
+                  <div class="row p-3">
+                    <div class="col-12 col-md-4 col-lg-3">
+                      <span class="nen-xanh">2021</span>
+                    </div>
+
+                    <div class="col-12 col-md-8 d-lg-flex">
+                      <div class="d-md-block ps-3">
+                        <div class="d-flex pb-2">
+                          <i class="icon-user-1"></i><span>FUNiX</span>
+                        </div>
+                        <div class="d-flex">
+                          <i class="icon-lamp"></i><span>Developer</span>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -501,16 +505,19 @@
                 <img src="./images/project_3.png" alt="" class="w-100" />
                 <div class="card-body">
                   <div class="da-name text-dark">TRANG WEB XEM TIN TỨC</div>
-                  <div class="cv2">
-                    <p class="nen-xanh">2021</p>
-                    <div class="cv2-2">
-                      <div class="cv2-1">
-                        <i class="icon-user-1"></i>
-                        <p>FUNIX</p>
-                      </div>
-                      <div class="cv2-1">
-                        <i class="icon-lamp"></i>
-                        <p>Developer</p>
+                  <div class="row p-3 duan1">
+                    <div class="col-12 col-md-4 col-lg-3">
+                      <span class="nen-xanh">2021</span>
+                    </div>
+
+                    <div class="col-12 col-md-8 d-lg-flex">
+                      <div class="d-md-block ps-3">
+                        <div class="d-flex pb-2">
+                          <i class="icon-user-1"></i><span>FUNiX</span>
+                        </div>
+                        <div class="d-flex">
+                          <i class="icon-lamp"></i><span>Developer</span>
+                        </div>
                       </div>
                     </div>
                   </div>
